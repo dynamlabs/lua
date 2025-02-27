@@ -765,14 +765,14 @@
 ** of a function in debug information.
 ** CHANGE it if you want a different size.
 */
-#define LUA_IDSIZE	60
+#define LUA_IDSIZE	32
 
 
 /*
 @@ LUAL_BUFFERSIZE is the initial buffer size used by the lauxlib
 ** buffer system.
 */
-#define LUAL_BUFFERSIZE   ((int)(16 * sizeof(void*) * sizeof(lua_Number)))
+#define LUAL_BUFFERSIZE 256 //   ((int)(16 * sizeof(void*) * sizeof(lua_Number)))
 
 
 /*
